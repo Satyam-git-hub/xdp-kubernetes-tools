@@ -29,8 +29,8 @@ To install another version (e.g., `v1.31.0`), pass it as an argument:
 After installation, the script creates the config file at `/etc/crictl.yaml` with the following default runtime endpoint (you can change it if needed):
 
 ```yaml
-runtime-endpoint: unix:///run/containerd/containerd.sock
-image-endpoint: unix:///run/containerd/containerd.sock
+runtime-endpoint: unix:///run/k3s/containerd/containerd.sock
+image-endpoint:   unix:///run/k3s/containerd/containerd.sock
 timeout: 10
 debug: false
 ```

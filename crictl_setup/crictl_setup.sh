@@ -24,8 +24,8 @@ rm -f "crictl-${VERSION}-linux-amd64.tar.gz"
 # Create crictl config file
 echo "📝 Creating /etc/crictl.yaml"
 sudo tee /etc/crictl.yaml > /dev/null <<EOF
-runtime-endpoint: unix:///run/containerd/containerd.sock
-image-endpoint: unix:///run/containerd/containerd.sock
+runtime-endpoint: unix:///run/k3s/containerd/containerd.sock
+image-endpoint:   unix:///run/k3s/containerd/containerd.sock
 timeout: 10
 debug: false
 EOF
